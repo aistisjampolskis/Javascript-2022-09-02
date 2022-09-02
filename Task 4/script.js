@@ -19,13 +19,13 @@ getCars().then(data => renderCars(data));
 
 const renderCars = (data) => {
   const table = document.createElement("table");
-  const thead = createHeader(["brand", "model"]);
+  const thead = createSection(["brand", "model"]);
   const tbody = createTbody(data);
   table.append(thead, tbody);
   document.body.prepend(table);
 };
 
-const createHeader = (columns) => {
+const createSection = (columns) => {
   const thead = document.createElement("thead");
   const theadtr = document.createElement("tr");
   columns.forEach((columnName) => {
@@ -54,13 +54,16 @@ const createTbody = data => {
     brandCell.style.cssText = "color: red";
     modelCell.style.cssText = "font-weight: bold";
     modelCell.style.cssText = "border-style: ridge";
-    tr.append(brandCell, modelCell);
+   tr.append(brandCell, modelCell);
     tbody.append(tr);
     const trouble = document.createElement("div");
     trouble.append(brandCell, modelCell);
     tbody.append(trouble);
     document.getElementById("output").appendChild(trouble);
     console.log(trouble);
+
+    trouble.className = "container";
+
   });
   return tbody;
 };

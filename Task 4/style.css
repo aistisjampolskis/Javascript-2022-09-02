@@ -27,3 +27,16 @@
   margin-top: 50px;
   color: #333;
 }
+thead tr {
+  
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  display: none;
+}
+
+p {
+  margin-left: -60rem;
+  padding: 0%;
+
+}
