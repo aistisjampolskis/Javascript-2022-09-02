@@ -13,3 +13,5 @@ const audi = {
 
 const array = Object.keys(audi);
 console.log(array);
+
+document.getElementById('d').innerHTML = 'Audi aprašymas ' +  audi.make + audi.model + audi.color + audi.year ;
