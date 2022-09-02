@@ -8,7 +8,7 @@ atveju grąžins "users", kurie turi augintinį.
 atveju grąžins masyvą su "users", kurie yra pilnamečiai.
 -------------------------------------------------------------------------- */
 
-const users = [
+let users = [
   { id: "1", name: "John Smith", age: 20, hasDog: true },
   { id: "2", name: "Ann Smith", age: 24, hasDog: false },
   { id: "3", name: "Tom Jones", age: 31, hasDog: true },
@@ -20,8 +20,12 @@ const users = [
   { id: "9", name: "Daniel Cane", age: 51, hasDog: true },
 ];
 
-const filterDogOwners = users.filter((users) => users.hasDog === true);
+let filterDogOwners = users.filter((users) => users.hasDog === true);
 console.log(filterDogOwners);
 
 const filterAdults = users.filter((users) => users.age >= "18");
 console.log(filterAdults);
+
+
+
+  
