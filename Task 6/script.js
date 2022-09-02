@@ -26,5 +26,9 @@ const getUserAverageAge = (prev, cur) => ({age: prev.age + cur.age});
 const avg = arr.reduce(getUserAverageAge).age / arr.length;
 console.log(avg); 
 
+document.getElementById('pp').innerHTML = 'Visų amžiaus vidurkis ' +  avg;
+
 const getUsersNames = users.map(a => a.name);
 console.log(getUsersNames);
+
+document.getElementById('ppp').innerHTML = 'Visų vardai ' +  getUsersNames;
