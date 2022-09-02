@@ -16,3 +16,8 @@ console.log(a);
 console.log(b);
 console.log(c);
 console.log(d);
+
+document.getElementById('i').innerHTML = "Sudėtis 1 + 4 = " + a;
+document.getElementById('h').innerHTML = "Dalyba 4 / 2 = " + b;
+document.getElementById('j').innerHTML = "Atimtis 3 - 2 = " + c;
+document.getElementById('k').innerHTML = "Daugyba 5 * 2 = " + d;
