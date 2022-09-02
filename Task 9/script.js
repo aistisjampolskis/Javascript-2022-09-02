@@ -10,7 +10,7 @@ Metodas:
 wasExpensive() - jeigu filmo "budget" yra daugiau nei 100 000 000 mln USD, tada grąžins true, kitu atveju false. 
 ------------------------------------------------------------------------------------------------------ */
 let Movie = new Object();
-Movie.title = "All cry";
+Movie.title = "All cry ";
 Movie.director = "Fernando";
 Movie.budget = 100000000;
 
@@ -21,9 +21,11 @@ const number = prompt("filmo biudžetas: ");
 
 if (number > Movie.budget) {
   console.log(Movie.title, Movie.director, "Brangus filmas");
+  document.getElementById('h').innerHTML = Movie.title + Movie.director + " Brangus filmas";
 }
 
 else {
   console.log(Movie.title, Movie.director, "filmas pigus jaučiasi..");
+  document.getElementById('h').innerHTML = Movie.title + Movie.director + " Pigus labai filmas";
 }
 
