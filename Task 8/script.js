@@ -32,5 +32,5 @@ console.log(calculate(1,2, "multi"));
 
 document.getElementById('a').innerHTML = 'Sudėtis ' +  n1 + " ir " + n2 + " rezultatas = " + sum;
 document.getElementById('b').innerHTML = 'Atimtis ' +  n1 + " ir " + n2 + " rezultatas = " + sub;
-document.getElementById('c').innerHTML = 'Sudėtis ' +  n1 + " ir " + n2 + " rezultatas = " + div;
-document.getElementById('d').innerHTML = 'Sudėtis ' +  n1 + " ir " + n2 + " rezultatas = " + multi;
+document.getElementById('c').innerHTML = 'Dalyba ' +  n1 + " ir " + n2 + " rezultatas = " + div;
+document.getElementById('d').innerHTML = 'Daugyba ' +  n1 + " ir " + n2 + " rezultatas = " + multi;
